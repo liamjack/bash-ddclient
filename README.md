@@ -16,6 +16,8 @@ Or you can setup a Cron job to automate the whole process. For example, to run t
 
 `0 * * * * /path/to/bash-ddclient.sh >/dev/null 2>&1`
 
+The best bit is that root is not required !
+
 ## Contributing
 
 Feel free to report any bugs, problems or ideas as a new issue. If you have improvements (new provider specific config files for example) that could benefit other users, then send in a pull request.
