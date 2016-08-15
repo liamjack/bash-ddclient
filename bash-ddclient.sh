@@ -30,7 +30,7 @@ if test "$cacheIp" != "$currentIp"; then
 	echo "[INFO] IP address has changed, updating"
 
 	url="https://$username:$password@$server/nic/update?system=dyndns&hostname=$hostname&myip=$currentIp"
-	wget -qO /dev/null $url
+	wget -qO /dev/null -u "bash-ddclient/v1.0"  $url
 
 	if test $? -ne 0; then
 		echo "[ERROR] Failed to update IP address."
